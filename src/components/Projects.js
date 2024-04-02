@@ -72,7 +72,7 @@ export const Projects = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""} style={{ marginBottom: '50px' }}>
+              <div style={{ marginBottom: '50px' }}>
                 <h2>About Me</h2>
                 <p>Third-year Telecommunication Engineering student with a focus on Network engineering, also proficient in Graphic Design. Passionate and dedicated network engineer with a hands-on approach to problem-solving. My journey began in 2018, evolving through practical experiences and academic pursuits. also experienced as a graphic designer from various organizations.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
@@ -87,7 +87,7 @@ export const Projects = () => {
                       <Nav.Link eventKey="third">Design</Nav.Link>
                     </Nav.Item>
                   </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                  <Tab.Content>
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
