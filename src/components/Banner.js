@@ -8,6 +8,10 @@ import TrackVisibility from 'react-on-screen';
 export const Banner = () => {
   const [text] = useState('');
 
+  const openLinkedIn = () => {
+    window.open('https://www.linkedin.com/in/hazman-wirayudha/', '_blank');
+  };
+
   return (
     <section className="banner" id="home">
       <Container>
@@ -19,7 +23,7 @@ export const Banner = () => {
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>Hi! I'm</h1><h1>Hazman Wirayudha</h1>
                   <p>I'm a third-year student pursuing a degree in Telecommunication Engineering</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <button onClick={openLinkedIn}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
