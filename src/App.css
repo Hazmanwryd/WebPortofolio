@@ -550,7 +550,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 /************ Projects Css ************/
-.contact {
+
+.rounded-image {
+  border-radius: 24px;
+}
+
+/* .contact {
   background: linear-gradient(90.21deg, #3640aa -5.91%, #2fa8bd 111.58%);
   padding: 60px 0 200px 0;
 }
@@ -619,7 +624,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button:hover::before {
   width: 100%;
-}
+} */
 
 /************ Footer Css ************/
 .footer {
@@ -698,5 +703,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+.behance-button {
+  background-color: white;
+  color: rgb(43, 167, 255) !important; 
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.behance-button:hover {
+  background-color: blue;
+  color: white !important; /* Pastikan teks putih saat hover */
 }
 

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
@@ -6,10 +6,12 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
-  const [text] = useState('');
-
   const openLinkedIn = () => {
     window.open('https://www.linkedin.com/in/hazman-wirayudha/', '_blank');
+  };
+
+  const openBehance = () => {
+    window.open('https://www.behance.net/gallery/212311233/Graphic-Design-Portofolio', '_blank');
   };
 
   return (
@@ -22,8 +24,12 @@ export const Banner = () => {
               <div className={isVisible ? "" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>Hi! I'm</h1><h1>Hazman Wirayudha</h1>
-                  <p>I'm a third-year student pursuing a degree in Telecommunication Engineering</p>
-                  <button onClick={openLinkedIn}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                <button onClick={openBehance} className="behance-button" style={{ marginBottom: '20px' }}>
+  View My Behance Portfolio
+</button>
+<button onClick={openLinkedIn}>
+  Let's Connect <ArrowRightCircle size={25} />
+</button>
               </div>}
             </TrackVisibility>
           </Col>

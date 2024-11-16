@@ -1,6 +1,6 @@
-import { FaNetworkWired, FaPaintBrush, FaMicrochip } from 'react-icons/fa';
+import { SiAdobephotoshop, SiAdobeillustrator, SiAdobepremierepro } from 'react-icons/si';
 import 'react-multi-carousel/lib/styles.css';
-import colorSharp from "../assets/img/color-sharp.png"
+import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
   return (
@@ -13,16 +13,16 @@ export const Skills = () => {
                         <p></p>
                         <div className="skills-container">
                             <div className="item">
-                                <FaNetworkWired size={50} style={{ marginBottom: '25px', color: 'black' }} />
-                                <h5 style={{ color: 'black' }}>Network Engineering</h5>
+                                <SiAdobephotoshop size={50} style={{ marginBottom: '25px', color: '#31A8FF' }} />
+                                <h5 style={{ color: '#31A8FF' }}>Adobe Photoshop</h5>
                             </div>
                             <div className="item">
-                                <FaPaintBrush size={50} style={{ marginBottom: '25px', color: 'black' }} />
-                                <h5 style={{ color: 'black' }}>Graphic Design</h5>
+                                <SiAdobeillustrator size={50} style={{ marginBottom: '25px', color: '#FF9A00' }} />
+                                <h5 style={{ color: '#FF9A00' }}>Adobe Illustrator</h5>
                             </div>
                             <div className="item">
-                                <FaMicrochip size={50} style={{ marginBottom: '25px', color: 'black' }} />
-                                <h5 style={{ color: 'black' }}>IoT Development</h5>
+                                <SiAdobepremierepro size={50} style={{ marginBottom: '25px', color: '#9999FF' }} />
+                                <h5 style={{ color: '#9999FF' }}>Adobe Premiere Pro</h5>
                             </div>
                         </div>
                     </div>
@@ -31,5 +31,5 @@ export const Skills = () => {
         </div>
         <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
-  )
-}
+  );
+};
