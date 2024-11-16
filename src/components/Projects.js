@@ -36,7 +36,7 @@ export const Projects = () => {
     },
   ];
   
-  const behanceLink = "https://www.behance.net/hazmanwirayudha1";
+  const behanceLink = "https://www.behance.net/gallery/212311233/Graphic-Design-Portofolio";
 
   return (
     <section className="project" id="projects">
